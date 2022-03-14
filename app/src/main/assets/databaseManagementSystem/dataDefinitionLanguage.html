@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h2{
+      background-color: #030217;
+			color: white;
+      border-radius: 8px;
+			padding-left:20px;
+        }
+p{
+      margin: 20px;
+        }
+img {
+  width:400px;
+  height: auto;
+  padding-left: 20px
+}
+h3{
+  padding-left: 20px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+div{
+  padding-left: 10px;
+}
+div.topic{
+  margin: 20px;
+  border-style: double
+}
+div.innerPoint{
+  margin-left: 20px;
+}
+h5{
+  margin-left: 20px;
+}
+div.tebledesign{border-style: dotted;}
+    </style>
+
+</head>
+
+<body>
+
+<div>
+  <h2>Data Definition Language</h2>
+  <div>
+    <p>A data definition language (DDL) is a computer language used to create and modify the structure of database objects in a database. These database objects include views, schemas, tables, indexes, etc.<br><br>This term is also known as data description language in some contexts, as it describes the fields and records in a database table.</p>
+</div>
+<div>
+    <h4>Data Definition Language (DDL)</h4  >
+    <p>The present database industry incorporates DDL into any formal language describing data. However, it is considered to be a subset of SQL (Structured Query Language). SQL often uses imperative verbs with normal English such as sentences to implement database modifications. Hence, DDL does not show up as a different language in an SQL database, but does define changes in the database schema.</p>
+    <p>It is used to establish and modify the structure of objects in a database by dealing with descriptions of the database schema. Unlike data manipulation language (DML) commands that are used for data modification purposes, DDL commands are used for altering the database structure such as creating new tables or objects along with all their attributes (data type, table name, etc.).</p>
+    <p>Commonly used DDL in SQL querying are CREATE, ALTER, DROP, and TRUNCATE.</p>
+    <h3>Create</h3>
+    <p>This command builds a new table and has a predefined syntax. The CREATE statement syntax is:</p>
+    <p>CREATE TABLE [table name] ([column definitions]) [table parameters];</p>
+    <p>For example:</p>
+    <p>CREATE TABLE Employee (Employee Id INTEGER PRIMARY KEY, First name CHAR (50) NULL, Last name CHAR (75) NOT NULL);</p>
+    <p>The mandatory semi-colon at the end of the statement is used to process every command before it. In this example, the string CHAR is used to specify the data type. Other data types can be DATE, NUMBER, or INTEGER.</p>
+    <h3>Alter</h3>
+    <p>An alter command modifies an existing database table. This command can add up additional column, drop existing columns and even change the data type of columns involved in a database table.</p>
+    <p>An alter command syntax is:</p>
+    <p>ALTER object type object name parameters;</p>
+    <p>For example:</p>
+    <p>ALTER TABLE Employee ADD PRIMARY KEY (employee_pk);</p>
+    <p>In this example, we added a unique primary key to the table to add a constraint and enforce a unique value. The constraint &ldquo;employee_pk&rdquo; is a primary key and is on the Employee table.</p>
+    <h3>Drop</h3>
+    <p>A drop command is used to delete objects such as a table, index or view. A DROP statement cannot be rolled back, so once an object is destroyed, there&rsquo;s no way to recover it.</p>
+    <p>Drop statement syntax is:</p>
+    <p>DROP object type object name;</p>
+    <p>For example:</p>
+    <p>DROP TABLE Employee;</p>
+    <p>In this example, we&rsquo;re deleting the Employee table.</p>
+    <h3>Truncate</h3>
+    <p>Similar to DROP, the TRUNCATE statement is used to quickly remove all records from a table. However, unlike DROP that completely destroys a table, TRUNCATE preserves its full structure to be reused later.</p>
+    <p>Truncate statement syntax is:</p>
+    <p>TRUNCATE TABLE table_name;</p>
+    <p>For example:</p>
+    <p>TRUNCATE TABLE Employee;</p>
+    <p>In this example, we&rsquo;re marking all the extents of the Employee table for deallocation, so they&rsquo;re considered empty for reuse.</p>
+</div>
+
+
+</div>
+
+</body>
+
+</html>

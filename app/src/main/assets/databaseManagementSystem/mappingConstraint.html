@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h2{
+      background-color: #030217;
+			color: white;
+      border-radius: 8px;
+			padding-left:20px;
+        }
+p{
+      margin: 20px;
+        }
+img {
+  width:400px;
+  height: auto;
+  padding-left: 20px
+}
+h3{
+  padding-left: 20px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+div{
+  padding-left: 10px;
+}
+div.topic{
+  margin: 20px;
+  border-style: double
+}
+div.innerPoint{
+  margin-left: 20px;
+}
+h5{
+  margin-left: 20px;
+}
+div.tebledesign{border-style: dotted;}
+div.rm{padding-top: 50px;
+padding-left: 20px;}
+
+    </style>
+
+</head>
+
+<body>
+
+<div>
+  <h2>Mapping constraints</h2>
+<ul>
+    <li>A mapping constraint is a data constraint that expresses the number of entities to which another entity can be related via a relationship set.</li>
+    <li>It is most useful in describing the relationship sets that involve more than two entity sets.</li>
+    <li>For binary relationship set R on an entity set A and B, there are four possible mapping cardinalities. These are as follows:<ol>
+            <li>One to one (1:1)</li>
+            <li>One to many (1:M)</li>
+            <li>Many to one (M:1)</li>
+            <li>Many to many (M:M)</li>
+        </ol>
+    </li>
+</ul>
+<h4>One-to-one</h4>
+<p>In one-to-one mapping, an entity in E1 is associated with at most one entity in E2, and an entity in E2 is associated with at most one entity in E1.</p>
+<p><img src="singleTier.jpg" alt="DBMS Mapping Constraints"></p>
+<h4>One-to-many</h4>
+<p>In one-to-many mapping, an entity in E1 is associated with any number of entities in E2, and an entity in E2 is associated with at most one entity in E1.</p>
+<p><img src="twoTier.jpg" alt="DBMS Mapping Constraints"></p>
+<h4>Many-to-one</h4>
+<p>In one-to-many mapping, an entity in E1 is associated with at most one entity in E2, and an entity in E2 is associated with any number of entities in E1.</p>
+<p><img src="threeTier.jpg" alt="DBMS Mapping Constraints"></p>
+<h4>Many-to-many</h4>
+<p>In many-to-many mapping, an entity in E1 is associated with any number of entities in E2, and an entity in E2 is associated with any number of entities in E1.</p>
+<p><img src="https://static.javatpoint.com/dbms/images/dbms-mapping-constraints4.png" alt="DBMS Mapping Constraints"></p>
+</body>
+
+</html>

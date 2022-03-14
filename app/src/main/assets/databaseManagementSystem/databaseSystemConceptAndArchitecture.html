@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h2{
+      background-color: #030217;
+			color: white;
+      border-radius: 8px;
+			padding-left:20px;
+        }
+p{
+      margin: 20px;
+        }
+img {
+  width:400px;
+  height: auto;
+  padding-left: 20px
+}
+h3{
+  padding-left: 20px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+div{
+  padding-left: 10px;
+}
+div.topic{
+  margin: 20px;
+  border-style: double
+}
+div.innerPoint{
+  margin-left: 20px;
+}
+h5{
+  margin-left: 20px;
+}
+div.tebledesign{border-style: dotted;}
+    </style>
+
+</head>
+
+<body>
+
+
+<div>
+  <h2>Database system concept and architectures</h2>
+  <img src="ArchitectureOfDBMS.jpg" alt="faild">
+  <h4>Physical or Internal Level:</h4>
+  <p>It is the Internal Level and is the physical storage of a database</p>
+  <p>Describes how the data is internally stored. It would also describe the data structures used by the database.</p>
+  <h4>Conceptual or Logical Level:</h4>
+  <p>It represents the complete content of the database i.e. the records and relationships. The global view of the database comes in the middle-tier as shown in the below figure.</p>
+  <p>The conceptual level has the logical structure of the entire database.</p>
+  <h4>External or View Level:</h4>
+  <p>External Level as the name suggests, is what the end users view. A database will have one Internal Schema and Conceptual Scheme, whereas it may have more than on Extrenal Schema formed as per the need of the users.</p>
+  <p></P>
+</div>
+<div>
+  <h2>Applicatinos architecture of DBMS</h2>
+  <h4>What is Database Architecture?</h4>
+  <p>A Database Architecture is a representation of DBMS design. It helps to design, develop, implement, and maintain the database management system. A DBMS architecture allows dividing the database system into individual components that can be independently modified, changed, replaced, and altered. It also helps to understand the components of a database.</p>
+  <p>A Database stores critical information and helps access data quickly and securely. Therefore, selecting the correct Architecture of DBMS helps in easy and efficient data management.</p>
+  <h4>Types of DBMS Architecture</h4>
+  <p>There are mainly three types of DBMS architecture:</p>
+  <h4>1-Tier Architecture</h4>
+  <p>1 Tier Architecture in DBMS is the simplest architecture of Database in which the client, server, and Database all reside on the same machine. A simple one tier architecture example would be anytime you install a Database in your system and access it to practice SQL queries. But such architecture is rarely used in production.</p>
+  <img src="singleTier.jpg" alt="failr">
+  <h4>2-Tier Architecture</h4>
+  <p>A 2 Tier Architecture in DBMS is a Database architecture where the presentation layer runs on a client (PC, Mobile, Tablet, etc.), and data is stored on a server called the second tier. Two tier architecture provides added security to the DBMS as it is not exposed to the end-user directly. It also provides direct and faster communication.</p>
+  <img src="twoTier.jpg" alt="failr">
+  <p>In the above 2 Tier client-server architecture of database management system, we can see that one server is connected with clients 1, 2, and 3.</p>
+  <h5>Two Tier Architecture Example:</h5>
+  <p>A Contact Management System created using MS- Access.</p>
+  <h4>3-Tier Architecture</h4>
+  <p>A 3 Tier Architecture in DBMS is the most popular client server architecture in DBMS in which the development and maintenance of functional processes, logic, data access, data storage, and user interface is done independently as separate modules. Three Tier architecture contains a presentation layer, an application layer, and a database server.</p>
+  <p>3-Tier database Architecture design is an extension of the 2-tier client-server architecture. A 3-tier architecture has the following layers:</p>
+  <div class="innerPoint">
+    <p>1. Presentation layer (your PC, Tablet, Mobile, etc.)</p>
+    <p>2. Application layer (server)</p>
+    <p>3. Database Server</p>
+  </div>
+  <img src="threeTier.jpg" alt="failr">
+  <p>The Application layer resides between the user and the DBMS, which is responsible for communicating the user’s request to the DBMS system and send the response from the DBMS to the user. The application layer(business logic layer) also processes functional logic, constraint, and rules before passing data to the user or down to the DBMS.</p>
+  <h4>The goal of Three Tier client-server architecture is:</h4>
+  <p>:-To separate the user applications and physical database</p>
+  <p>:-To support DBMS characteristics</p>
+  <p>:-Program-data independence</p>
+  <p>:-Supporting multiple views of the data </p>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h2{
+      background-color: #030217;
+			color: white;
+      border-radius: 8px;
+			padding-left:20px;
+        }
+p{
+      margin: 20px;
+        }
+img {
+  width:400px;
+  height: auto;
+  padding-left: 20px
+}
+h3{
+  padding-left: 20px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+div{
+  padding-left: 10px;
+}
+div.topic{
+  margin: 20px;
+  border-style: double
+}
+div.innerPoint{
+  margin-left: 20px;
+}
+h5{
+  margin-left: 20px;
+}
+div.tebledesign{border-style: dotted;}
+    </style>
+
+</head>
+
+<body>
+
+<div>
+  <h2>Overall Database Structure</h2>
+  <img src="Structure_of_DBMS.jpg" alt="faild">
+  <p>DBMS acts as an interface between user and the database. DBMS are very large and typically divided into modules :-</p>
+<p><br></p>
+<p><strong><u>DDL Compiler -&nbsp;</u></strong>Converts DDL statements to a set of tables containing metadata stored in a data dictionary.Metadata information can be the name of files,data items,storage details of each file,mapping information and constraints,etc.</p>
+<p><br></p>
+<p><br></p>
+<div><strong><u>DML Compiler and Query Optimizer -</u></strong> DML compiler translates the Data Manipulation Languages into query&nbsp;</div>
+<p>Engine instructions. It might also do optimization for query.</p>
+<p>Query processor/optimizer<strong>&nbsp;</strong>translates statements in a query language into low-level instructions the database manager understands. (It is used to find an equivalent but more efficient form).</p>
+<p><br></p>
+<div><strong><u><strong><u><br></u></strong></u></strong></div>
+<p><strong><u>Data Manager -</u>&nbsp;</strong>The data manager is the central software component of the DBMS. It is sometimes referred to as the database control system.</p>
+<p>One of the functions of the data manager is to convert operations in the user&apos;s queries coming directly via the query processor or\ indirectly via an application program from the user&apos;s logical view to a physical file system.&nbsp;</p>
+<div>The data manager is responsible for interfacing with the file system as show. In addition, the tasks of enforcing constraints to maintain the consistency and integrity of the data, as well as its security, are also performed by the data manager.<br>It is also the responsibility of the Data. Manager to provide the synchronization in the simultaneous operations performed by concurrent users and to maintain the backup and recovery operations.<br><strong><u><br></u></strong></div>
+<div><strong><u>Data Dictionary</u></strong> - Data Dictionary is a repository of description of data in the database.A data dictionary contains a list of all files in the database, the number of records&nbsp;in each file and the names and&nbsp;types of each field. Most database management systems keep the data dictionary hidden from users to prevent them from accidentally destroying its content.</div>
+<div><br>Functions of the Data Dictionary-<br>1. Defines the data element.<br>2. Helps in the scheduling.<br>3. Helps in the control.<br>4. Permits the various users who know which data is available and how can it be obtained.<br>5. Helps in the identification of the organizational data irregularity.<br>6. Acts as a very essential data management tool.<br>7. Provides with a good standardization mechanism.<br>8. Acts as the corporate glossary of the ever growing information resource.<br>9. Provides the report facility, the control facility along with the excerpt facility.</div>
+<div><br><strong><u>Data Files -</u></strong> It stores the database.</div>
+<div><br><u><strong>Compiled DML -</strong></u> The DML complier converts the high level Queries into low level file access commands known as compiled DML.</div>
+<div><br></div>
+<div><strong><u>End Users</u> -</strong> End Users are the people who interact with the database through applications or utilities. The various categories of end users are:</div>
+<div><br></div>
+<div>1. &nbsp;Casual End Users -&nbsp;These Users occasionally access the database but may need different information each time. They use sophisticated database Query language to specify their requests. For example: High level Managers who access the data weekly or biweekly.</div>
+<div><br>2. &nbsp;Native End Users -&nbsp;These users frequently query and update the database using standard types of Queries. The operations that can be performed by this class of users are very limited and effect precise portion of the database.For example:&nbsp;- Reservation clerks for airlines/hotels check availability for given request and make reservations. Also, persons using Automated Teller Machines (ATM&apos;s) fall under this category as he has access to limited portion of the database.</div>
+<div><br>3.Standalone end Users/On-line End Users - Those end Users who interact with the database directly via on-line terminal or indirectly through Menu or graphics based Interfaces.Example:-Library Management System. &nbsp;</div>
+
+</div>
+
+</body>
+
+</html>

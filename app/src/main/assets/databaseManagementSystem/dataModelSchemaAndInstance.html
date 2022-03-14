@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h2{
+      background-color: #030217;
+			color: white;
+      border-radius: 8px;
+			padding-left:20px;
+        }
+p{
+      margin: 20px;
+        }
+img {
+  width:400px;
+  height: auto;
+  padding-left: 20px
+}
+h3{
+  padding-left: 20px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+div{
+  padding-left: 10px;
+}
+div.topic{
+  margin: 20px;
+  border-style: double
+}
+div.innerPoint{
+  margin-left: 20px;
+}
+h5{
+  margin-left: 20px;
+}
+div.tebledesign{border-style: dotted;}
+    </style>
+
+</head>
+<body>
+<div>
+  <h2>Schemas and Instance</h2>
+  <h4>Schema :</h4>
+  <p>Schema is the overall description of the database. The basic structure of how the data will be stored in the database is called schema.</p>
+  <img src="instance_and_schema.jpg" alt="faild">
+  <h4>Types of Schema</h4>
+  <p>The different types of schemas are as follows −</p>
+  <div>
+    <ul>
+  <li>
+      <p><strong>Physical schema</strong> &minus; It is a database design at the physical level.It is hidden below the logical schema and can be changed easily without affecting the application programs.</p>
+  </li>
+  <li>
+      <p><strong>Logical schema</strong> &minus; It is a database design at the logical level. Programmers construct applications using logical schema.</p>
+  </li>
+  <li>
+      <p><strong>External</strong> &minus; It is schema at view level. It is the highest level of a schema which defines the views for end users.</p>
+  </li>
+  </ul>
+    </div>
+    <p>Generally the Database Management System (DBMS) assists one physical schema, one logical schema and several sub or external schemas.</P>
+      <p>Database schema refers to the format and layout of the database in which the data will be stored. It is the one thing that remains the same throughout unless otherwise modified. It defines the structure of what type of data and how it will be stored.</p>
+      <h5>Example</h5>
+      <p>A database schema for a person will have fields for name, email, phone and address as shown below −</p>
+
+      <h5>Person</h5>
+      <div class="tebledesign">
+      <table style="width: 100%;">
+        <tbody>
+          <tr>
+              <td style="width: 33.3333%;"  >Name</td>
+              <td style="width: 33.3333%;">Email</td>
+              <td style="width: 33.3333%;">Phone no</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><br></p>
+      </div>
+      <h4>What are Instances?</h4>
+      <p>These refer to a collection of all the information and data stored at any given moment. One can easily change these instances using certain CRUD operations, such as deletion and addition of data and information.</p>
+      <p>You must note that no search queries make any changes in any instances.</p>
+</div>
+</body>
+</html>

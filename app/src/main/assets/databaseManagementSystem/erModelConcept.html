@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h2{
+      background-color: #030217;
+			color: white;
+      border-radius: 8px;
+			padding-left:20px;
+        }
+p{
+      margin: 20px;
+        }
+img {
+  width:400px;
+  height: auto;
+  padding-left: 20px
+}
+h3{
+  padding-left: 20px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+div{
+  padding-left: 10px;
+}
+div.topic{
+  margin: 20px;
+  border-style: double
+}
+div.innerPoint{
+  margin-left: 20px;
+}
+h5{
+  margin-left: 20px;
+}
+div.tebledesign{border-style: dotted;}
+div.rm{padding-top: 50px;
+padding-left: 20px;}
+
+    </style>
+
+</head>
+
+<body>
+
+<div>
+  <h2>ER model concept</h2>
+  <header>
+    <p>The ER model defines the conceptual view of a database. It works around real-world entities and the associations among them. At view level, the ER model is considered a good option for designing databases.</p>
+    <h4>Entity</h4>
+    <p>An entity can be a real-world object, either animate or inanimate, that can be easily identifiable. For example, in a school database, students, teachers, classes, and courses offered can be considered as entities. All these entities have some attributes or properties that give them their identity.</p>
+    <p>An entity set is a collection of similar types of entities. An entity set may contain entities with attribute sharing similar values. For example, a Students set may contain all the students of a school; likewise a Teachers set may contain all the teachers of a school from all faculties. Entity sets need not be disjoint.</p>
+    <h4>Attributes</h4>
+    <p>Entities are represented by means of their properties, called&nbsp;<strong>attributes</strong>. All attributes have values. For example, a student entity may have name, class, and age as attributes.</p>
+    <p>There exists a domain or range of values that can be assigned to attributes. For example, a student&apos;s name cannot be a numeric value. It has to be alphabetic. A student&apos;s age cannot be negative, etc.</p>
+    <h3>Types of Attributes</h3>
+    <ul>
+        <li>
+            <p><strong>Simple attribute</strong> &minus; Simple attributes are atomic values, which cannot be divided further. For example, a student&apos;s phone number is an atomic value of 10 digits.</p>
+        </li>
+        <li>
+            <p><strong>Composite attribute</strong> &minus; Composite attributes are made of more than one simple attribute. For example, a student&apos;s complete name may have first_name and last_name.</p>
+        </li>
+        <li>
+            <p><strong>Derived attribute</strong> &minus; Derived attributes are the attributes that do not exist in the physical database, but their values are derived from other attributes present in the database. For example, average_salary in a department should not be saved directly in the database, instead it can be derived. For another example, age can be derived from data_of_birth.</p>
+        </li>
+        <li>
+            <p><strong>Single-value attribute</strong> &minus; Single-value attributes contain single value. For example &minus; Social_Security_Number.</p>
+        </li>
+        <li>
+            <p><strong>Multi-value attribute</strong> &minus; Multi-value attributes may contain more than one values. For example, a person can have more than one phone number, email_address, etc.</p>
+        </li>
+    </ul>
+    <p>These attribute types can come together in a way like &minus;</p>
+    <ul>
+        <li>simple single-valued attributes</li>
+        <li>simple multi-valued attributes</li>
+        <li>composite single-valued attributes</li>
+        <li>composite multi-valued attributes</li>
+    </ul>
+    <h3>Entity-Set and Keys</h3>
+    <p>Key is an attribute or collection of attributes that uniquely identifies an entity among entity set.</p>
+    <p>For example, the roll_number of a student makes him/her identifiable among students.</p>
+    <ul>
+        <li>
+            <p><strong>Super Key</strong> &minus; A set of attributes (one or more) that collectively identifies an entity in an entity set.</p>
+        </li>
+        <li>
+            <p><strong>Candidate Key</strong> &minus; A minimal super key is called a candidate key. An entity set may have more than one candidate key.</p>
+        </li>
+        <li>
+            <p><strong>Primary Key</strong> &minus; A primary key is one of the candidate keys chosen by the database designer to uniquely identify the entity set.</p>
+        </li>
+    </ul>
+    <h4>Relationship</h4>
+    <p>The association among entities is called a relationship. For example, an employee&nbsp;<strong>works_at</strong> a department, a student&nbsp;<strong>enrolls</strong> in a course. Here, Works_at and Enrolls are called relationships.</p>
+    <h3>Relationship Set</h3>
+    <p>A set of relationships of similar type is called a relationship set. Like entities, a relationship too can have attributes. These attributes are called&nbsp;<strong>descriptive attributes</strong>.</p>
+    <h3>Degree of Relationship</h3>
+    <p>The number of participating entities in a relationship defines the degree of the relationship.</p>
+    <ul>
+        <li>Binary = degree 2</li>
+        <li>Ternary = degree 3</li>
+        <li>n-ary = degree</li>
+    </ul>
+    <h3>Mapping Cardinalities</h3>
+    <p><strong>Cardinality</strong> defines the number of entities in one entity set, which can be associated with the number of entities of other set via relationship set.</p>
+</header>
+<div><br></div>
+</div>
+
+</body>
+
+</html>
