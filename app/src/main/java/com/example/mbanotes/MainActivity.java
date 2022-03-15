@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.mbanotes.Adapters.CustomAdapter;
+import com.example.mbanotes.Models.DataModel;
+
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;

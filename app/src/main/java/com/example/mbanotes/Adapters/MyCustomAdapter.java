@@ -1,4 +1,4 @@
-package com.example.mbanotes;
+package com.example.mbanotes.Adapters;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -10,13 +10,16 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.example.mbanotes.Models.DataModel;
+import com.example.mbanotes.R;
+
 public class MyCustomAdapter extends ArrayAdapter<String> {
 
     private final Context context;
     private final String[] topName;
 
     public MyCustomAdapter(@NonNull Context context, String[] topName) {
-        super(context,R.layout.row_topic_design,topName);
+        super(context, R.layout.row_topic_design,topName);
         this.context = context;
         this.topName = topName;
     }

@@ -1,4 +1,4 @@
-package com.example.mbanotes;
+package com.example.mbanotes.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+
+import com.example.mbanotes.R;
 
 public class CustomAdapter extends ArrayAdapter<String> {
 

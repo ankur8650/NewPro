@@ -1,18 +1,16 @@
 package com.example.mbanotes;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.File;
+import com.example.mbanotes.Adapters.MyCustomAdapter;
+import com.example.mbanotes.Models.DataModel;
 
 public class TopicActivity extends AppCompatActivity {
 
