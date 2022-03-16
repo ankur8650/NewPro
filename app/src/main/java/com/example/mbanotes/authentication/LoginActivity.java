@@ -3,6 +3,7 @@ package com.example.mbanotes.authentication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -25,7 +26,9 @@ import com.google.firebase.database.FirebaseDatabase;
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
     FirebaseAuth auth;
-
+    String myEmail ;
+    String myPassword;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         // getSupportActionBar().hide();  // you can hide this activity toolbar.
+
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setTitle("wait few seconds");
+        progressDialog.setMessage("Register Account");
+        progressDialog.setCancelable(false);
 
         REGISTER_ACCOUNT();
         alreadyMyAccount();
@@ -48,20 +56,23 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Please enter right email", Toast.LENGTH_SHORT).show();
                 } else if (TextUtils.isEmpty(password)) {
                     Toast.makeText(LoginActivity.this, "Please enter password", Toast.LENGTH_SHORT).show();
-                } else if (!(password.length() <= 6)) {
+                } else if ((password.length() <= 6)) {
                     Toast.makeText(LoginActivity.this, "Password more than 6 character", Toast.LENGTH_SHORT).show();
                 } else {
+                    progressDialog.show();
                     auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                                 finish();
+                                progressDialog.dismiss();
                             }
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
+                            progressDialog.dismiss();
                             Toast.makeText(LoginActivity.this, "Error is " + e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
@@ -75,14 +86,21 @@ public class LoginActivity extends AppCompatActivity {
         binding.registerAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
+
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                intent.putExtra("emaill", myEmail);
+                intent.putExtra("passwordd", myPassword);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+
+
             }
         });
     }
 
     private void alreadyMyAccount() {
-        String myEmail = getIntent().getStringExtra("email");
-        String myPassword = getIntent().getStringExtra("password");
+          myEmail = getIntent().getStringExtra("email");
+          myPassword = getIntent().getStringExtra("password");
         binding.loginEmail.setText(myEmail);
         binding.loginPassword.setText(myPassword);
     }
