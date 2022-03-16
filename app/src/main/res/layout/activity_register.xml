@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#03A9F4"
     android:paddingLeft="5dp"
-    tools:context=".authentication.LoginActivity">
+    tools:context=".authentication.RegisterActivity">
 
     <TextView
         android:id="@+id/textView3"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="106dp"
         android:gravity="center"
-        android:text="Login Account"
+        android:text="Register Account"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="italic"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/loginEmail"
+        android:id="@+id/registerEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
@@ -37,34 +37,34 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/loginPassword"
+        android:id="@+id/registerPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/loginEmail"
+        app:layout_constraintEnd_toEndOf="@+id/registerEmail"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/loginEmail"
-        app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
+        app:layout_constraintStart_toStartOf="@+id/registerEmail"
+        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/registerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Login Account"
-        app:layout_constraintEnd_toEndOf="@+id/loginPassword"
-        app:layout_constraintStart_toStartOf="@+id/loginPassword"
-        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
+        android:text="Register Account"
+        app:layout_constraintEnd_toEndOf="@+id/registerPassword"
+        app:layout_constraintStart_toStartOf="@+id/registerPassword"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
     <TextView
-        android:id="@+id/register_account"
+        android:id="@+id/login_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Register Account"
+        android:text="Login Account"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -4,16 +4,37 @@ import com.example.mbanotes.R;
 
 public class DataModel {
 
-    public String[] subName = {"Emerging Technologies in Global Business Environment", "B2B and Service Marketing", "Sales and Retail Management", "Social Media & Web Analytics",
-            "Database Management System", "Cloud Computing for Business", "Business Data Warehousing & Data Mining",
-            "HR Analytics", "Performance and Reward Management", "International HRM",
-            "Financial Derivatives", "Foreign Exchange and Risk Management", "Financial and Credit Risk Analytics",};
-   public Integer[] ImgData = {R.drawable.etgbe, R.drawable.b2b, R.drawable.srm, R.drawable.smwa,
-            R.drawable.dbms, R.drawable.ccb, R.drawable.bdwdm,
-            R.drawable.hra, R.drawable.prm, R.drawable.ihrm,
-            R.drawable.fd, R.drawable.ferm, R.drawable.fcra};
+    public String[] subName = {
+            "Emerging Technologies in Global Business Environment",
+            "B2B and Service Marketing",
+            "Sales and Retail Management",
+            "Social Media & Web Analytics",
+            "Database Management System",
+            "Cloud Computing for Business",
+            "Business Data Warehousing & Data Mining",
+            "HR Analytics",
+            "Performance and Reward Management",
+            "International HRM",
+            "Financial Derivatives",
+            "Foreign Exchange and Risk Management",
+            "Financial and Credit Risk Analytics",};
 
-   public String[] businessEnvironmentAndLeganAspectOfBusiness = {"Unit 1 Introduction to Micro Environment"};
+    public Integer[] ImgData = {
+            R.drawable.etgbe,
+            R.drawable.b2b,
+            R.drawable.srm,
+            R.drawable.smwa,
+            R.drawable.dbms,
+            R.drawable.ccb,
+            R.drawable.bdwdm,
+            R.drawable.hra,
+            R.drawable.prm,
+            R.drawable.ihrm,
+            R.drawable.fd,
+            R.drawable.ferm,
+            R.drawable.fcra};
+
+    public String[] businessEnvironmentAndLeganAspectOfBusiness = {"Unit 1 Introduction to Micro Environment"};
 
     final private String[] emergingTechnologiesInGlobalBusinessEnvironment = {
             "Unit 1", "Industry 4.0 and Digital Transformation", "Meaning and Nature of Industry 4.0 and Latest Trends", "Realignment in Political", "Economic", "Socio-Cultural", "Technological Factors that are driving change in International Business Management", "The changing nature of Globalization", "The changing nature of regulatory environment", "natural environment", "new age ethics", "Overview of Digital Transformation"};

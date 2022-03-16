@@ -66,9 +66,10 @@ public class LastActivity extends AppCompatActivity {
                         webView.loadUrl("file:///android_asset/databaseManagementSystem/mappingConstraint.html");
                         break;
                     default:
-                        Toast.makeText(getApplicationContext(),"Something wrong",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Something went wrong",Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case 1:
                 switch (myDataPosition) {
                     case 0:
@@ -87,6 +88,7 @@ public class LastActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Something wrong",Toast.LENGTH_SHORT).show();
                 }
                 break;
+
         }
 
     }

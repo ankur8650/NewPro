@@ -48,10 +48,13 @@ public class TopicActivity extends AppCompatActivity {
             case 4:
                 MyCustomAdapter myCustomAdapter4 = new MyCustomAdapter(this,dataModel.getDataBaseManagementSystem());
                 listView.setAdapter(myCustomAdapter4);
+
                 listView.setOnItemClickListener((AdapterView<?> adapterView, View view, int position, long l) -> {
                     startActivity(new Intent(getApplicationContext(), LastActivity.class).putExtra("data", position).putExtra("position",myDataPosition));
                 });
+
                 break;
+
             case 5:
                 MyCustomAdapter myCustomAdapter5 = new MyCustomAdapter(this,dataModel.getCloudComputingForBusiness());
                 listView.setAdapter(myCustomAdapter5);
