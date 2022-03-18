@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 String email = binding.loginEmail.getText().toString();
                 String password = binding.loginPassword.getText().toString();
                 if (TextUtils.isEmpty(email) || !email.contains("@gmail.com")) {
-                    Toast.makeText(LoginActivity.this, "Please enter right email", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
                 } else if (TextUtils.isEmpty(password)) {
                     Toast.makeText(LoginActivity.this, "Please enter password", Toast.LENGTH_SHORT).show();
                 } else if ((password.length() <= 6)) {
@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                startActivity(new Intent(getApplicationContext(), MsomeainActivity.class));
                                 finish();
                                 progressDialog.dismiss();
                             }
