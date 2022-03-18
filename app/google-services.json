@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "960186357584",
+    "firebase_url": "https://mba-notes-4fa7a-default-rtdb.firebaseio.com",
+    "project_id": "mba-notes-4fa7a",
+    "storage_bucket": "mba-notes-4fa7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960186357584:android:520f6169ed30f8b965fe55",
+        "android_client_info": {
+          "package_name": "com.example.mbanotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960186357584-6e9hp5bttukkl5gk2snhbi7fnalg2kos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGAlNYtkjRlP49RrTc9l2DBcLPydfEFpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960186357584-6e9hp5bttukkl5gk2snhbi7fnalg2kos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

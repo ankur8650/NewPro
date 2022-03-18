@@ -52,9 +52,7 @@ public class TopicActivity extends AppCompatActivity {
                 listView.setOnItemClickListener((AdapterView<?> adapterView, View view, int position, long l) -> {
                     startActivity(new Intent(getApplicationContext(), LastActivity.class).putExtra("data", position).putExtra("position",myDataPosition));
                 });
-
                 break;
-
             case 5:
                 MyCustomAdapter myCustomAdapter5 = new MyCustomAdapter(this,dataModel.getCloudComputingForBusiness());
                 listView.setAdapter(myCustomAdapter5);
