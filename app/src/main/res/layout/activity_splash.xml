@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00B7FF"
     android:id="@+id/splachScreen"
     tools:context=".MainActivity">
     <ImageView
         android:id="@+id/logoid"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/logipic"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
     <TextView
@@ -19,7 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Notes For MBA"
-        android:textColor="#FF0073"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
         android:layout_below="@+id/logoid"
         android:layout_centerHorizontal="true"
         android:textSize="40dp"
@@ -29,7 +32,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/logoText"
         android:text="II Semester"
+        android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="< Creted By Unique Developer >"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
